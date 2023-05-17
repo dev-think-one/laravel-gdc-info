@@ -105,7 +105,7 @@ class GDCInfoFromHtmlFlow
                     $data['first_registered_on'] = $date;
                 }
             } catch (\Exception $e) {
-
+                // nothing
             }
         }
 
@@ -123,6 +123,7 @@ class GDCInfoFromHtmlFlow
                             $data['current_period_from'] = $date;
                         }
                     } catch (\Exception $e) {
+                        // nothing
                     }
 
                     $date = $dateData[1];
@@ -133,6 +134,7 @@ class GDCInfoFromHtmlFlow
                             $data['current_period_until'] = $date;
                         }
                     } catch (\Exception $e) {
+                        // nothing
                     }
                 }
             }

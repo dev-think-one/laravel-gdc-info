@@ -1,5 +1,12 @@
 # GDC Info checker
 
+[![Packagist License](https://img.shields.io/packagist/l/yaroslawww/laravel-gdc-info?color=%234dc71f)](https://github.com/yaroslawww/laravel-gdc-info/blob/main/LICENSE.md)
+[![Packagist Version](https://img.shields.io/packagist/v/yaroslawww/laravel-gdc-info)](https://packagist.org/packages/yaroslawww/laravel-gdc-info)
+[![Total Downloads](https://img.shields.io/packagist/dt/yaroslawww/laravel-gdc-info)](https://packagist.org/packages/yaroslawww/laravel-gdc-info)
+[![Build Status](https://scrutinizer-ci.com/g/yaroslawww/laravel-gdc-info/badges/build.png?b=main)](https://scrutinizer-ci.com/g/yaroslawww/laravel-gdc-info/build-status/main)
+[![Code Coverage](https://scrutinizer-ci.com/g/yaroslawww/laravel-gdc-info/badges/coverage.png?b=main)](https://scrutinizer-ci.com/g/yaroslawww/laravel-gdc-info/?branch=main)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/yaroslawww/laravel-gdc-info/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/yaroslawww/laravel-gdc-info/?branch=main)
+
 GDC info parser
 
 ## Installation
