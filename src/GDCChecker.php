@@ -29,7 +29,7 @@ class GDCChecker
     {
         $modelClass = static::$model;
 
-        /** @var  \GDCInfo\Models\GDCInfo $model */
+        /** @var \GDCInfo\Models\GDCInfo $model */
         $model = new $modelClass($attributes);
 
         return $model;

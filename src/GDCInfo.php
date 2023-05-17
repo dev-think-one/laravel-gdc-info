@@ -9,15 +9,15 @@ use Illuminate\Support\Arr;
 class GDCInfo
 {
     protected int $gdc;
-    protected ?string $firstName = null;
-    protected ?string $lastName = null;
-    protected ?string $status = null;
-    protected ?string $registrantType = null;
-    protected ?Carbon $firstRegisteredOn = null;
-    protected ?Carbon $currentPeriodFrom = null;
+    protected ?string $firstName          = null;
+    protected ?string $lastName           = null;
+    protected ?string $status             = null;
+    protected ?string $registrantType     = null;
+    protected ?Carbon $firstRegisteredOn  = null;
+    protected ?Carbon $currentPeriodFrom  = null;
     protected ?Carbon $currentPeriodUntil = null;
-    protected ?string $qualifications = null;
-    protected array $additionalInfo = [];
+    protected ?string $qualifications     = null;
+    protected array $additionalInfo       = [];
 
     public function gdc(): int
     {
@@ -100,12 +100,12 @@ class GDCInfo
             $info->firstRegisteredOn = $data['first_registered_on'];
         }
         if (
-            !empty($data['current_period_from']) &&
-            !empty($data['current_period_until']) &&
+            !empty($data['current_period_from'])             &&
+            !empty($data['current_period_until'])            &&
             ($data['current_period_from'] instanceof Carbon) &&
             ($data['current_period_until'] instanceof Carbon)
         ) {
-            $info->currentPeriodFrom = $data['current_period_from'];
+            $info->currentPeriodFrom  = $data['current_period_from'];
             $info->currentPeriodUntil = $data['current_period_until'];
         }
 
@@ -127,14 +127,14 @@ class GDCInfo
     public function toArray(): array
     {
         return array_filter([
-            'registration_number' => $this->gdc(),
-            'first_name' => $this->firstName(),
-            'last_name' => $this->lastName(),
-            'status' => $this->status(),
-            'registrant_type' => $this->registrantType(),
-            'qualifications' => $this->qualifications(),
-            'first_registered_on' => $this->firstRegisteredOn(),
-            'current_period_from' => $this->currentPeriodFrom(),
+            'registration_number'  => $this->gdc(),
+            'first_name'           => $this->firstName(),
+            'last_name'            => $this->lastName(),
+            'status'               => $this->status(),
+            'registrant_type'      => $this->registrantType(),
+            'qualifications'       => $this->qualifications(),
+            'first_registered_on'  => $this->firstRegisteredOn(),
+            'current_period_from'  => $this->currentPeriodFrom(),
             'current_period_until' => $this->currentPeriodUntil(),
             ...$this->additionalInfo(),
         ]);

@@ -10,16 +10,16 @@ use Illuminate\Database\Eloquent\Model;
 class GDCInfo extends Model
 {
     protected $primaryKey = 'gdc';
-    public $incrementing = false;
+    public $incrementing  = false;
 
     protected $guarded = [];
 
     protected $casts = [
-        'first_registered_on' => 'date',
-        'current_period_from' => 'date',
+        'first_registered_on'  => 'date',
+        'current_period_from'  => 'date',
         'current_period_until' => 'date',
-        'last_fetched_at' => 'datetime',
-        'data' => 'array',
+        'last_fetched_at'      => 'datetime',
+        'data'                 => 'array',
     ];
 
     public function getTable(): string
@@ -55,16 +55,16 @@ class GDCInfo extends Model
             ]);
         }
 
-        $model->first_name = $gdcInfo->firstName();
-        $model->last_name = $gdcInfo->lastName();
-        $model->status = $gdcInfo->status();
-        $model->registrant_type = $gdcInfo->registrantType();
-        $model->qualifications = $gdcInfo->qualifications();
-        $model->first_registered_on = $gdcInfo->firstRegisteredOn();
-        $model->current_period_from = $gdcInfo->currentPeriodFrom();
+        $model->first_name           = $gdcInfo->firstName();
+        $model->last_name            = $gdcInfo->lastName();
+        $model->status               = $gdcInfo->status();
+        $model->registrant_type      = $gdcInfo->registrantType();
+        $model->qualifications       = $gdcInfo->qualifications();
+        $model->first_registered_on  = $gdcInfo->firstRegisteredOn();
+        $model->current_period_from  = $gdcInfo->currentPeriodFrom();
         $model->current_period_until = $gdcInfo->currentPeriodUntil();
-        $model->data = $gdcInfo->toArray();
-        $model->last_fetched_at = Carbon::now();
+        $model->data                 = $gdcInfo->toArray();
+        $model->last_fetched_at      = Carbon::now();
         $model->save();
 
         return $model;
