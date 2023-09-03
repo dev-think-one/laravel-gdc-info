@@ -1,16 +1,16 @@
 {
-    "name": "yaroslawww/laravel-gdc-info",
+    "name": "think.studio/laravel-gdc-info",
     "description": "GDC info parser",
     "keywords": [
         "laravel",
         "gdc"
     ],
-    "homepage": "https://github.com/yaroslawww/laravel-gdc-info",
+    "homepage": "https://github.com/dev-think-one/laravel-gdc-info",
     "license": "MIT",
     "authors": [
         {
             "name": "Yaroslav Georgitsa",
-            "email": "yaroslav.georgitsa@gmail.com",
+            "email": "yg@think.studio",
             "homepage": "https://github.com/yaroslawww",
             "role": "Developer"
         }

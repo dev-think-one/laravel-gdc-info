@@ -1,11 +1,11 @@
 # GDC Info checker
 
-[![Packagist License](https://img.shields.io/packagist/l/yaroslawww/laravel-gdc-info?color=%234dc71f)](https://github.com/yaroslawww/laravel-gdc-info/blob/main/LICENSE.md)
-[![Packagist Version](https://img.shields.io/packagist/v/yaroslawww/laravel-gdc-info)](https://packagist.org/packages/yaroslawww/laravel-gdc-info)
-[![Total Downloads](https://img.shields.io/packagist/dt/yaroslawww/laravel-gdc-info)](https://packagist.org/packages/yaroslawww/laravel-gdc-info)
-[![Build Status](https://scrutinizer-ci.com/g/yaroslawww/laravel-gdc-info/badges/build.png?b=main)](https://scrutinizer-ci.com/g/yaroslawww/laravel-gdc-info/build-status/main)
-[![Code Coverage](https://scrutinizer-ci.com/g/yaroslawww/laravel-gdc-info/badges/coverage.png?b=main)](https://scrutinizer-ci.com/g/yaroslawww/laravel-gdc-info/?branch=main)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/yaroslawww/laravel-gdc-info/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/yaroslawww/laravel-gdc-info/?branch=main)
+![Packagist License](https://img.shields.io/packagist/l/think.studio/laravel-gdc-info?color=%234dc71f)
+[![Packagist Version](https://img.shields.io/packagist/v/think.studio/laravel-gdc-info)](https://packagist.org/packages/think.studio/laravel-gdc-info)
+[![Total Downloads](https://img.shields.io/packagist/dt/think.studio/laravel-gdc-info)](https://packagist.org/packages/think.studio/laravel-gdc-info)
+[![Build Status](https://scrutinizer-ci.com/g/dev-think-one/laravel-gdc-info/badges/build.png?b=main)](https://scrutinizer-ci.com/g/dev-think-one/laravel-gdc-info/build-status/main)
+[![Code Coverage](https://scrutinizer-ci.com/g/dev-think-one/laravel-gdc-info/badges/coverage.png?b=main)](https://scrutinizer-ci.com/g/dev-think-one/laravel-gdc-info/?branch=main)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/dev-think-one/laravel-gdc-info/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/dev-think-one/laravel-gdc-info/?branch=main)
 
 GDC info parser
 
@@ -14,7 +14,7 @@ GDC info parser
 Install the package via composer:
 
 ```shell
-composer require yaroslawww/laravel-gdc-info
+composer require think.studio/laravel-gdc-info
 ```
 
 Optionally you can publish the config file with:
