@@ -2,6 +2,7 @@
 
 namespace GDCInfo\Tests;
 
+use GDCInfo\Exceptions\FindGDCInfoException;
 use GDCInfo\Exceptions\NotFoundGDCInfoException;
 use GDCInfo\Flows\GDCInfoFromHtmlFlow;
 
@@ -48,6 +49,15 @@ class GDCInfoFromHtmlFlowTest extends TestCase
         $this->assertNotNull($gdcInfo->currentPeriodUntil());
 
         $this->assertNotEmpty($gdcInfo->additionalInfo());
+    }
+
+    /** @test */
+    public function parse_incorrect_info()
+    {
+        $this->expectException(FindGDCInfoException::class);
+        $this->expectExceptionMessage('Invalid gdc number [0000].');
+
+        GDCInfoFromHtmlFlow::make()->get('0000');
     }
 
 }

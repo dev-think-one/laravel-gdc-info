@@ -8,8 +8,8 @@ class GDCChecker
 
     public static function useModel(string $modelClass): static
     {
-        if (!is_subclass_of($modelClass, \GDCInfo\Models\GDCInfo::class)) {
-            throw new \Exception("Class should be a model [{$modelClass}]");
+        if (!is_a($modelClass, \GDCInfo\Models\GDCInfo::class, true)) {
+            throw new \Exception("Class should be a subclass of GDCInfo [{$modelClass}]");
         }
 
         static::$model = $modelClass;
